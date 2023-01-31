@@ -1,0 +1,59 @@
+.containerWithTasks{
+    display: grid;
+    gap:20px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    justify-content: center;
+  align-content: center;
+}
+
+.taskItemContainer{
+    border-radius:5px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:0px;
+    border-radius: 5px;
+    color:aliceblue;
+    background-color:rgb(41, 40, 40);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.taskItemContainer__task_information{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.taskItemContainer__task_information__taskImageUrl{
+    width: 100%;
+}
+.taskItemContainer__task_information__taskName{
+    font-weight: 600;
+    font-size: 1.2em;
+    padding:5px;
+}
+.taskItemContainer__task_information__taskDescription{
+    font-weight: 400;
+    font-size: 0.8em;
+    text-align: left;
+    padding:5px;
+}
+.taskItemContainer__buttonContainer{
+    margin:5px;
+}
+.buttonContainer__deleteButton{
+
+    color: red;
+    border-color:1px solid red;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.buttonContainer__deleteButton:hover{
+    color: white;
+    background-color: red;
+    border-color:1px solid red;
+}
+.buttonContainer__editButton{
+    opacity:0.3;
+}

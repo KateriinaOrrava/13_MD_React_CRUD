@@ -1,0 +1,41 @@
+
+.task_panel_container{
+    width: 70%;
+    border-radius:5px;
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    padding:0px;
+    border-radius: 5px;
+    color:aliceblue;
+    background-color:rgb(41, 40, 40);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.fields_container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 100%;
+}
+.field_container{
+    font-weight: 400;
+    font-size: 0.8em;
+    text-align: left;
+    padding:5px;
+    width: 100%;
+}
+input {
+    width: 100%;
+    background-color: rgb(75, 74, 74);
+}
+.addNewButton{
+    color: rgb(35, 35, 196);
+    border-color:1px solid rgb(35, 35, 196);
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.addNewButton:hover{
+    color: white;
+    background-color: rgb(35, 35, 196);
+    border-color:1px solid rgb(35, 35, 196);
+}
