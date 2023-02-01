@@ -1,12 +1,10 @@
-import { useState, useEffect } from 'react';
-import Task from './components/type';
-import DEFAULT_BUCKET_LIST_TASKS from './components/startTasksDB';
+import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { Tasks } from './components/Tasks';
 import {AddNewTask} from './components/AddTask';
 import './App.css'
 import axios from 'axios';
-import React from 'react';
+
 
 
 

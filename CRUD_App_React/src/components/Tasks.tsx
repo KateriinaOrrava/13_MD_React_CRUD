@@ -2,7 +2,6 @@ import React from "react";
 import Task from "./type";
 import { TaskItem } from "./TaskItem";
 import styles from './stylesForComponents/Items.module.css'
-import { AddNewTask, TodoKeeper } from "./AddTask";
 
 
 interface TasksProps {

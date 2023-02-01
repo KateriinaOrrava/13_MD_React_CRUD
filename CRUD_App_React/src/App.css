@@ -127,3 +127,6 @@ select {
   margin-top:30px;
   justify-content: center;
 }
+.addNewContainer{
+  width: 50%;
+}

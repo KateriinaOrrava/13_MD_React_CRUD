@@ -39,15 +39,24 @@
     text-align: left;
     padding:5px;
 }
+.taskItemContainer_buttonContainer{
+        display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
 .taskItemContainer__buttonContainer{
     margin:5px;
+
 }
 .buttonContainer__deleteButton{
-
+    background-color: rgb(230, 226, 226);
     color: red;
     border-color:1px solid red;
     margin-top:10px;
     margin-bottom:10px;
+    width: 90%;
 }
 .buttonContainer__deleteButton:hover{
     color: white;
@@ -55,5 +64,26 @@
     border-color:1px solid red;
 }
 .buttonContainer__editButton{
-    opacity:0.3;
+    background-color: rgb(230, 226, 226);
+
+    color: green;
+    border-color:1px solid green;
+    margin-top:10px;
+    margin-bottom:10px;
+    width: 90%;
+}
+.buttonContainer__editButton:hover{
+    color: white;
+    background-color:green;
+    border-color:1px solid green;
+}
+.editForm{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    gap:10px;
+    ;
+}
+.saveChangesButton{
+    margin-top:20px;
 }
