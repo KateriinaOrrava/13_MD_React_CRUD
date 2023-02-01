@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Task from './components/type';
 import DEFAULT_BUCKET_LIST_TASKS from './components/startTasksDB';
 import { Header } from './components/Header';
@@ -6,37 +6,37 @@ import { Tasks } from './components/Tasks';
 import {AddNewTask} from './components/AddTask';
 import './App.css'
 import axios from 'axios';
+import React from 'react';
+
+
 
 function App(){
-  const [tasks, setTasks] = useState(DEFAULT_BUCKET_LIST_TASKS);
 
- 
-    // funkcija, lai izdzēstu uzdevumu
-    const deleteTask =(id: Task['id']) => {
-      // filtrējam cauri visam masīvam, ja ir sakritība
-      setTasks(tasks.filter((task) => task.id !== id ));
-    }
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios(
+        'http://localhost:3004/DEFAULT_BUCKET_LIST_TASKS',
+      );
 
-    const addNewTask = ({imageUrl, name, description}: Omit<Task, 'id'>) => {
-      // katram jaunam elementam id tiks piešķirts unikals - atškirīgs no citiem;
-      setTasks([...tasks, {id: (tasks[tasks.length - 1].id + 1), description, name, imageUrl}])
-    }
+      setTasks(result.data);
+    };
 
+    fetchData();
+  }, []);
+  const [tasks, setTasks] = useState([]);
+console.log(tasks)
 return(
   <div className='app_container'>
     <Header taskCounter={(tasks.length)} />
     <div className='app_container__content'>
-      <Tasks 
-      tasks={tasks} 
-      deleteTask={deleteTask} />
+      <Tasks tasks={tasks} />
     </div>
-
-    <AddNewTask addNewTask={addNewTask}/>
-
+    <div className="addNewContainer">
+      <AddNewTask />
+    </div>
   </div>
 )
 }
 
   export default App;
-
 

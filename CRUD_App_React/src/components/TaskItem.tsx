@@ -2,13 +2,13 @@ import React from "react";
 import Task from "./type";
 import { Tasks } from "./Tasks";
 import styles from './stylesForComponents/Items.module.css'
+import axios from "axios";
 
 interface TaskItemProps {
     task: Task;
-    deleteTask: (id: Task['id']) => void;    
 }
 
-export const TaskItem: React.FC<TaskItemProps> = ({task, deleteTask}) => {
+export const TaskItem: React.FC<TaskItemProps> = ({task}) => {
     return (
         <div className={styles.taskItemContainer}>
             <div className={styles.taskItemContainer__task_information}>
@@ -23,8 +23,15 @@ export const TaskItem: React.FC<TaskItemProps> = ({task, deleteTask}) => {
                 </div>
             </div>
             <div className={styles.taskItemContainer_buttonContainer}>
-                <button onClick={() => deleteTask(task.id)} className={styles.buttonContainer__deleteButton}>Delete</button>
-                <button onClick={() => alert('not ready')} className={styles.buttonContainer__editButton}>Edit</button>
+                <button onClick={() => {
+                    console.log(task.id);
+                    axios.delete<Task>(`http://localhost:3004/DEFAULT_BUCKET_LIST_TASKS/${task.id}`);
+                    window.location.reload();
+                }
+                    } className={styles.buttonContainer__deleteButton}>Delete</button>
+                <button onClick={() => {
+
+                }} className={styles.buttonContainer__editButton}>Edit</button>
             </div>
         </div>
     )

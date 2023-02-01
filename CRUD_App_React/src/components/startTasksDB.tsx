@@ -1,10 +1,10 @@
-import React from "react";
-import Task from "./type";
+// import React from "react";
+// import Task from "./type";
 
-const DEFAULT_BUCKET_LIST_TASKS = [
-    {id: 1, name: 'Call Someone To Tell Them You Can’t Talk Right Now', description:'This funny bucket list idea will leave them confused for a good while. Even better if you call someone you’re actually feeling like talking to – you never know if they’ll get confused enough to call you back.', imageUrl:'https://images.pexels.com/photos/2233442/pexels-photo-2233442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'},
-    {id: 2, name: 'Go Up To Strangers And Act Like Lifelong Friends', description:'Maybe they’ll think you’ve completely lost it, but in a rare and beautiful scenario you just may make some new friends. In either case you’ll have a lot of fun confusing people.', imageUrl:'https://images.pexels.com/photos/209620/pexels-photo-209620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'},
-    {id: 3, name: 'Jump Into A Taxi, Then Shout “Follow That Car!', description:'This one is best played if you have not determined in advance which car you’re talking about. Just point in a random direction, and if the taxi driver asks which car, on the spot choose one...', imageUrl:'https://images.pexels.com/photos/1564506/pexels-photo-1564506.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'},
-]
+// const DEFAULT_BUCKET_LIST_TASKS = [
+//     {id: 1, name: 'Call Someone To Tell Them You Can’t Talk Right Now', description:'This funny bucket list idea will leave them confused for a good while. Even better if you call someone you’re actually feeling like talking to – you never know if they’ll get confused enough to call you back.', imageUrl:'https://images.pexels.com/photos/2233442/pexels-photo-2233442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'},
+//     {id: 2, name: 'Go Up To Strangers And Act Like Lifelong Friends', description:'Maybe they’ll think you’ve completely lost it, but in a rare and beautiful scenario you just may make some new friends. In either case you’ll have a lot of fun confusing people.', imageUrl:'https://images.pexels.com/photos/209620/pexels-photo-209620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'},
+//     {id: 3, name: 'Jump Into A Taxi, Then Shout “Follow That Car!', description:'This one is best played if you have not determined in advance which car you’re talking about. Just point in a random direction, and if the taxi driver asks which car, on the spot choose one...', imageUrl:'https://images.pexels.com/photos/1564506/pexels-photo-1564506.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'},
+// ]
 
-export default DEFAULT_BUCKET_LIST_TASKS;
+// export default DEFAULT_BUCKET_LIST_TASKS;
